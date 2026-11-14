@@ -117,7 +117,8 @@ def retriever_node(state: State):
                     "tool": action.tool,
                     "input": action.tool_input,
                 })
-                context += f"\n{tool_result}"
+                if "Invalid Format" not in str(tool_result):
+                    context += f"\n{tool_result}"
 
         # If intermediate steps didn't produce context, check output
         if not context.strip() and result.get("output") and "Agent stopped" not in result["output"]:
@@ -231,17 +232,18 @@ def generate(state: State):
         dict: Generated response.
     """
     context = state["messages"][-1].content
+    question = state.get("latest_query") or state["messages"][0].content
     try:
         generate_prompt = PromptTemplate(
             template=config.prompt("generate_prompt"),
-            input_variables=["context"]
+            input_variables=["question", "context"]
         )
         generate_chain = generate_prompt | llm
-        result = generate_chain.invoke({"context": context})
+        result = generate_chain.invoke({"question": question, "context": context})
         content = result.content
     except Exception as e:
         print(f"[generate] Error generating answer: {e}")
-        content = context if context else "I was unable to find relevant information to answer your question."
+        content = "I was unable to find relevant information to answer your question."
 
     return {"messages": [{"role": "assistant", "content": content}]}
 

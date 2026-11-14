@@ -356,3 +356,11 @@ A: Yes! You can change `GROQ_MODEL` in your `.env` file (e.g. `llama-3.3-70b-ver
 
 ---
 
+<<<<<<< HEAD
+=======
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+>>>>>>> 765909b (changes)
