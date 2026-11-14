@@ -356,15 +356,3 @@ A: Yes! You can change `GROQ_MODEL` in your `.env` file (e.g. `llama-3.3-70b-ver
 
 ---
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 👤 Author
-
-**Hemant**  
-- GitHub: [@simplyhemant](https://github.com/simplyhemant)  
-- Repository: [adaptive-rag](https://github.com/simplyhemant/adaptive-rag)
-
