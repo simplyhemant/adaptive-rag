@@ -1,0 +1,3 @@
+**Tool Instruction – Form Retriever**
+
+This tool is dedicated exclusively to answering questions that pertain to the content of the uploaded **form**. It can only retrieve and reference information present within that document and has no access to external sources or any other knowledge. Use it solely to obtain answers based on what is contained in the uploaded form.
