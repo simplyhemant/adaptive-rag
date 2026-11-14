@@ -221,7 +221,7 @@ Uploads and indexes a PDF or TXT document into the FAISS vector store.
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/dhruvsinghal09/Adaptive-Rag.git
+git clone https://github.com/simplyhemant/adaptive-rag.git
 cd adaptive-rag
 
 # 2. Create and activate a virtual environment
@@ -356,6 +356,7 @@ A: Yes! You can change `GROQ_MODEL` in your `.env` file (e.g. `llama-3.3-70b-ver
 
 ---
 
+## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
@@ -363,6 +364,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👤 Author
 
-**Dhruv Singhal**  
-- GitHub: [@dhruvsinghal09](https://github.com/dhruvsinghal09)  
-- Project: [Adaptive RAG](https://github.com/dhruvsinghal09/Adaptive-Rag)
+**Hemant**  
+- GitHub: [@simplyhemant](https://github.com/simplyhemant)  
+- Repository: [adaptive-rag](https://github.com/simplyhemant/adaptive-rag)
+
